@@ -1,12 +1,63 @@
-<!-- Descrizione
-Dobbiamo creare una pagina che permetta ai nostri utenti di utilizzare il nostro generatore di password (abbastanza) sicure.
-L’esercizio è suddiviso in varie milestone ed è molto importante svilupparle in modo ordinato.
-Milestone 1
-Creare un form che invii in GET la lunghezza della password. Una nostra funzione utilizzerà questo dato per generare una password casuale (composta da lettere, lettere maiuscole, numeri e simboli) da restituire all’utente. Scriviamo tutto (logica e layout) in un unico file index.php
-Milestone 2
-Verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file functions.php che includeremo poi nella pagina principale
-Milestone 3 (BONUS)
-Gestire ulteriori parametri per la password: quali caratteri usare fra numeri, lettere e simboli.
-Possono essere scelti singolarmente (es. solo numeri) oppure possono essere combinati fra loro (es. numeri e simboli, oppure tutti e tre insieme). Dare all’utente anche la possibilità di permettere o meno la ripetizione di caratteri uguali.
-Milestone 4 (BONUS - OPZIONALE)
-Invece di visualizzare la password nella index, effettuare un redirect ad una pagina dedicata che tramite $_SESSION (documentazione) recupererà la password da mostrare all’utente. -->
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>PHP Strong Password Generator</title>
+</head>
+
+<body>
+    <div class="container py-5 bg-success">
+        <h1 class="text-center">Strong Password Generetor</h1>
+        <h2 class="text-center text-white">Genere una password sicura</h2>
+        <input class="form-control py-3 " type="text" value="Nessun parametro valido inserito" aria-label="Disabled input example" disabled readonly>
+        <div class="box bg-white mt-4 d-flex justify-content-around rounded">
+            <div class="left d-flex flex-column mt-3">
+                <label class="mb-4">
+                    Lunghezza password:
+                </label>
+                <!-- /.label -->
+                <label>
+                    Consenti ripetizioni di uno o più caratteri:
+                </label>
+                <!-- /.label -->
+                <div class="mt-5">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                </div>
+                <!-- /.button -->
+            </div>
+            <!-- /.left -->
+            <div class="right d-flex flex-column mt-3">
+                <input class="mb-4" type="text">
+                <div>
+                    <input class="mb-2" type="radio" name="" id=""> Si
+                </div>
+                <div>
+                    <input class="mb-4" type="radio" name="" id=""> No
+                </div>
+                <div>
+                    <input class="mb-2" type="checkbox" name="" id=""> Lettere
+                </div>
+                <div>
+                    <input class="mb-2" type="checkbox" name="" id=""> Numeri
+                </div>
+                <div>
+                    <input class="mb-2" type="checkbox" name="" id=""> Simboli
+                </div>
+            </div>
+            <!-- /.right -->
+        </div>
+        <!-- /.box -->
+    </div>
+    <!-- /.container -->
+</body>
+
+</html>
