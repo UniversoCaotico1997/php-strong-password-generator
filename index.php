@@ -1,23 +1,6 @@
 <?php
-// Creare un form che invii in GET la lunghezza della password
 
-$password = $_GET["password"];
-echo strlen($password);
-
-// Una nostra funzione utilizzerà questo dato per generare una password casuale 
-// (composta da lettere, lettere maiuscole, numeri e simboli) 
-// da restituire all’utente
-
-function generatorRandomPassword($key)
-{
-    $uppercaseCharacter = "ABCDEFGHILMNOPQRSTUVZ";
-    $lowercase = "abcdefghilmnopqrstuvz";
-    $number = "123456789";
-    $simbol = "!£$%&/()?^:;,.";
-}
-
-
-
+include __DIR__ . '/function.php';
 
 ?>
 
