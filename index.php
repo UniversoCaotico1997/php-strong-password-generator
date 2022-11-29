@@ -38,22 +38,25 @@
             </div>
             <!-- /.left -->
             <div class="right">
-                <form class="d-flex flex-column mt-3" action="">
-                    <input class="mb-4" type="text">
-                    <div>
-                        <input class="mb-2" type="radio" name="" id=""> Si
+                <form class="d-flex flex-column mt-3" action="index.php" method="GET">
+
+                    <div class="mb-4">
+                        <input type="text" name="password" id="password">
                     </div>
-                    <div>
-                        <input class="mb-4" type="radio" name="" id=""> No
+                    <div class="mb-2">
+                        <input type="radio" name="" id=""> Si
                     </div>
-                    <div>
-                        <input class="mb-2" type="checkbox" name="" id=""> Lettere
+                    <div class="mb-4">
+                        <input type="radio" name="" id=""> No
                     </div>
-                    <div>
-                        <input class="mb-2" type="checkbox" name="" id=""> Numeri
+                    <div class="mb-2">
+                        <input type="checkbox" name="" id=""> Lettere
                     </div>
-                    <div>
-                        <input class="mb-2" type="checkbox" name="" id=""> Simboli
+                    <div class="mb-2">
+                        <input type="checkbox" name="" id=""> Numeri
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" name="" id=""> Simboli
                     </div>
                 </form>
                 <!-- /.form -->
