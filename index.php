@@ -1,5 +1,7 @@
 <?php
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -35,23 +37,26 @@
                 <!-- /.button -->
             </div>
             <!-- /.left -->
-            <div class="right d-flex flex-column mt-3">
-                <input class="mb-4" type="text">
-                <div>
-                    <input class="mb-2" type="radio" name="" id=""> Si
-                </div>
-                <div>
-                    <input class="mb-4" type="radio" name="" id=""> No
-                </div>
-                <div>
-                    <input class="mb-2" type="checkbox" name="" id=""> Lettere
-                </div>
-                <div>
-                    <input class="mb-2" type="checkbox" name="" id=""> Numeri
-                </div>
-                <div>
-                    <input class="mb-2" type="checkbox" name="" id=""> Simboli
-                </div>
+            <div class="right">
+                <form class="d-flex flex-column mt-3" action="">
+                    <input class="mb-4" type="text">
+                    <div>
+                        <input class="mb-2" type="radio" name="" id=""> Si
+                    </div>
+                    <div>
+                        <input class="mb-4" type="radio" name="" id=""> No
+                    </div>
+                    <div>
+                        <input class="mb-2" type="checkbox" name="" id=""> Lettere
+                    </div>
+                    <div>
+                        <input class="mb-2" type="checkbox" name="" id=""> Numeri
+                    </div>
+                    <div>
+                        <input class="mb-2" type="checkbox" name="" id=""> Simboli
+                    </div>
+                </form>
+                <!-- /.form -->
             </div>
             <!-- /.right -->
         </div>
