@@ -1,4 +1,17 @@
 <?php
+// Creare un form che invii in GET la lunghezza della password
+
+$password = $_GET["password"];
+echo strlen($password);
+
+// Una nostra funzione utilizzerà questo dato per generare una password casuale 
+// (composta da lettere, lettere maiuscole, numeri e simboli) 
+// da restituire all’utente
+
+function generatorRandomPassword($key)
+{
+}
+
 
 
 
@@ -31,8 +44,8 @@
                 </label>
                 <!-- /.label -->
                 <div class="mt-5">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-primary">Invia</button>
+                    <button type="button" class="btn btn-secondary">Annulla</button>
                 </div>
                 <!-- /.button -->
             </div>
@@ -50,13 +63,13 @@
                         <input type="radio" name="" id=""> No
                     </div>
                     <div class="mb-2">
-                        <input type="checkbox" name="" id=""> Lettere
+                        <input type="checkbox" name="checkbox" id="checkbox"> Lettere
                     </div>
                     <div class="mb-2">
-                        <input type="checkbox" name="" id=""> Numeri
+                        <input type="checkbox" name="checkbox" id="checkbox"> Numeri
                     </div>
                     <div class="mb-2">
-                        <input type="checkbox" name="" id=""> Simboli
+                        <input type="checkbox" name="checkbox" id="checkbox"> Simboli
                     </div>
                 </form>
                 <!-- /.form -->
