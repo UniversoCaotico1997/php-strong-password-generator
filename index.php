@@ -10,6 +10,10 @@ echo strlen($password);
 
 function generatorRandomPassword($key)
 {
+    $uppercaseCharacter = "ABCDEFGHILMNOPQRSTUVZ";
+    $lowercase = "abcdefghilmnopqrstuvz";
+    $number = "123456789";
+    $simbol = "!£$%&/()?^:;,.";
 }
 
 
